@@ -1,0 +1,1 @@
+web: gunicorn test_olist.wsgi --log-file -
