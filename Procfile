@@ -1,1 +1,1 @@
-web: gunicorn test_olist.wsgi --log-file -
+web: gunicorn books_api.wsgi --log-file -

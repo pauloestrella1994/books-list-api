@@ -18,14 +18,13 @@ from django.conf.urls import include
 from django.urls import path
 from rest_framework import routers
 from core_list.api.viewsets import ProductViewSet
-from csv_reader.api.viewsets import AuthorsViewSet
+from Authors_list.api.viewsets import AuthorsViewSet
 
 router = routers.DefaultRouter()
-router.register(r'products', ProductViewSet)
-router.register(r'csv_file', AuthorsViewSet)
+router.register(r'books_list', ProductViewSet)
+router.register(r'authors_list', AuthorsViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('csv_file/', include(router.urls)),
     path('admin/', admin.site.urls),
 ]
