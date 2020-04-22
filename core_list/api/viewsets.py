@@ -5,5 +5,5 @@ from .serializers import ProductSerializer
 class ProductViewSet(ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    filterset_fields = ['name', 'publication_year', 'edition', 'authors']
+    filterset_fields = ['name', 'publication_year', 'edition', 'Authors']
 
