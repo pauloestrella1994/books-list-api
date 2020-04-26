@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class CsvReaderConfig(AppConfig):
-    name = 'csv_reader'
+class AuthorsListConfig(AppConfig):
+    name = 'Authors_list'
