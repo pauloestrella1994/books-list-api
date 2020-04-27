@@ -29,7 +29,7 @@ class TestAuthors:
         assert result.status_code == 200
         assert result.json()['name'] == book_put['name']
     
-    # def test_delete_book(self):
-    #     result = requests.delete(url=f'{self.url_base}15/')
+    def test_delete_book(self):
+        result = requests.delete(url=f'{self.url_base}5/')
 
-    #     assert result.status_code == 404 and len(result.text) == 0
+        assert result.status_code == 204 and len(result.text) == 0

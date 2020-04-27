@@ -30,9 +30,9 @@ class TestAuthors:
         assert result.json()['author_name'] == author_put['author_name']
     
     def test_delete_author(self):
-        result = requests.delete(url=f'{self.url_base}15/')
+        result = requests.delete(url=f'{self.url_base}17/')
 
-        assert result.status_code == 404 and len(result.text) == 0
+        assert result.status_code == 204 and len(result.text) == 0
 
     
 
