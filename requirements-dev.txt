@@ -12,3 +12,5 @@ pytz==2019.3
 six==1.14.0
 sqlparse==0.3.1
 static3==0.7.0
+requests==2.23.0
+pytest==5.4.1
