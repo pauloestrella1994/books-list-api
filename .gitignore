@@ -1,7 +1,14 @@
-venv
+.venv
+/venv
+.env
+db.sqlite3
+/db.sqlite3
+Authors_list/migrations
+core_list/migrations
 *.sqlite3
 *. idea
 *pyc
 media
 .env
+.idea
 
