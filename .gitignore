@@ -13,3 +13,6 @@ media
 .env
 .idea
 
+__pycache__
+/__pycache__/
+*/__pycache__/
